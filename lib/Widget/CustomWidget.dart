@@ -18,7 +18,7 @@ class TodoTile extends StatelessWidget{
     return Row(
       children: [
         Checkbox(value: isTrue, onChanged: onChange),
-        Text(title)
+        Text(title, style: TextStyle(decoration: isTrue ? TextDecoration.lineThrough : TextDecoration.none),)
       ],
     );
   }

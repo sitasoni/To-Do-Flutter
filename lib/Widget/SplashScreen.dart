@@ -1,6 +1,6 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
+import 'package:to_do_master/Widget/TodoScreen.dart';
 import 'HomeScreen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -15,7 +15,8 @@ class SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(Duration(seconds: 2),(){
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen(),));
+      // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen(),)); // old
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => TodoScreen(),));
     });
   }
 
